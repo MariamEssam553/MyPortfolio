@@ -7,7 +7,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Home = () => {
   return (
-    <div className="w-full h-screen bg-[#0a192f]">
+    <div name='home' className="w-full h-screen bg-[#0a192f]">
 
       {/* social icons */}
       <div className="hidden md:flex fixed flex-col top-[35%] left-0 ">

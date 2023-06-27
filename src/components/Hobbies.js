@@ -54,7 +54,7 @@ const Hobbies = () => {
   };
 
   return (
-    <div className="h-screen w-full pt-[50px] bg-[#0a192f] text-gray-300">
+    <div name='hobbies' className="h-screen w-full pt-[50px] bg-[#0a192f] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col items-center w-full h-full">
         <p className=" text-4xl w-min py-2 font-bold inline border-b-4 border-pink-600 ">
           Hobbies
