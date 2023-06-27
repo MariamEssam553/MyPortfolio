@@ -62,7 +62,7 @@ const Hobbies = () => {
         <p className="py-4">Photography, Traveling & Reading</p>
         <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group bg-gradient-to-r from-[#0a192f]">
           <div
-            style={{ backgroundImage: `url('${slides[currentIndex]}')`}}
+            style={{ backgroundImage: `url('${slides[currentIndex]}')` }}
             className="w-full h-full rounded-2xl bg-center bg-contain bg-no-repeat duration-500"
           ></div>
           {/* Left Arrow */}
