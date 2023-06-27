@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../assets/Djed.png';
+// import logo from '../assets/Djed.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="flex justify-center items-center w-full h-[80px]  p-4 bg-[#0a192f] text-gray-300">
+    <div className="flex fixed justify-center items-center w-full h-[80px]  p-4 bg-[#0a192f] text-gray-300  shadow-lg shadow-black/20 dark:shadow-black/40">
       <div className="flex items-center">
         <ul className="hidden md:flex items-center justify-between text-xl">
 
@@ -28,7 +28,7 @@ const Navbar = () => {
         </ul>
 
         {/* Hamburger */}
-        <div onClick={handleClick} className="md:hidden z-10">
+        <div onClick={handleClick} className="md:hidden z-10 ">
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
