@@ -4,11 +4,11 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FaGoodreads } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
-    <div name='home' className="w-full h-screen bg-[#0a192f]">
-
+    <div name="home" className="w-full h-screen bg-[#0a192f]">
       {/* social icons */}
       <div className="hidden md:flex fixed flex-col top-[35%] left-0 ">
         <ul>
@@ -74,22 +74,22 @@ const Home = () => {
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
           I'm a Web Developer
         </h2>
-        <p className='my-3 mx-1 text-lg text-[#8892b0]'>
+        <p className="my-3 mx-1 text-lg text-[#8892b0]">
           Hardworking and dedicated college student working towards a B.Sc. in
           Computer Engineering
         </p>
 
         <div>
           <button className="text-white group border-2 px-6 py-3 my-5 mx-1 flex items-center hover:bg-pink-600 hover:border-pink-600 duration-300">
-            View Work
+            <Link to="about" smooth={true} duration={500}>
+              View Work
+            </Link>
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-4" />
             </span>
           </button>
         </div>
-
       </div>
-
     </div>
   );
 };
